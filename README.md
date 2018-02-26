@@ -14,9 +14,16 @@ It's a good tutorial, and I recommend reading through it!
 I'm a Scala n00b, and I went through the the tutorial in hopes of
 getting a better understanding of how to integrate Scala into a
 Java project. The result was having a main Scala project/runnable
-that pulls in Java code. The next step is to go the other direction:
+that pulls in Java code.
+
+The next step was to go the other direction:
 to have a java project/runnable that pulls in Scala code. That is,
 I'd like the *bulk* of my project to be Java, with a small subset
 of Scala inserted into the project. The end-goal is to use
 [ScalaSTM](https://nbronson.github.io/scala-stm/) in a mostly Java
 project.
+
+To that effect, I modified the java Runner class to pull in the
+BooksProcessor that was written in Scala. It works! A more elegant
+solution could be written, but this at least serves as a proof of
+concept.
